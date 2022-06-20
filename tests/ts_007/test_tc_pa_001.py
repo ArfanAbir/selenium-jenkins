@@ -11,6 +11,8 @@ password = userData.password
 
 class AIAnalyzer(BasePage):
     @allure.step("FNO Login into bpusa website")
+    @allure.severity("CRITICAL")
+    @allure.description("Create Rules for History ")
     def test_tc_pa_001(self):
         tc_pa = tc_pa_001(self.driver)
         tc_pa.set_email(email)
